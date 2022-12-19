@@ -16,7 +16,7 @@
     height: 50vh;
     width: 100vw;
     position: absolute;
-    z-index: -5;
+    /* z-index: -5; */
     margin: 0;
     top: 0px;
     background: radial-gradient(859px at 10% 20%, rgba(202, 180, 118, 0.726) 0%, #a44d33bd 80%), url(/images/cbg2.jpg) repeat fixed 100% ;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-.cv-btn1:hover {
+.cv-btn1:hover { 
     background-color:#bb7937;
     border: 2px solid #bb7937 ;
     transition: all 0.3s;
