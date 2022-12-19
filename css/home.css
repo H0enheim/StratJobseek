@@ -319,28 +319,24 @@
     /* background-color: rgba(0, 0, 0, 0.397);*/
 }
 
-.cv-btn {
-    height: 50px;
-    width: 100%;
-    margin: 0 auto;
-    border: 2px solid tan;
-    background: transparent;
-    border-radius: 5px;
-    color:#FFEBCD;
-    transition: all 0.3s;
-    font-size: 18px;
+.para2 .col {
+    flex-basis: 20%;
+    text-align: center;
 }
 
-.cv-btn:hover {
-    background-color:#bb7937;
-    border: 2px solid #bb7937 ;
-    transition: all 0.3s;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+.para2 .col h4{
+    font-size: 15px;
 }
 
+.para2 p{
+    font-size: 12px;
+}
+
+.para2 .col img{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+}
 
 .site-footer {
   background-color:#e9ecef;
