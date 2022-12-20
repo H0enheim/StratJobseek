@@ -11,6 +11,7 @@ body{
   justify-content: center;
   align-items: center; */
   background: url(/images/bg.jpg);
+  background-size: cover;
 }
 
 /* input, button{
@@ -20,9 +21,9 @@ body{
 } */
 
 .contentt{
-  margin: 100px 0px 0px 200px;
+ padding: 50px 0px 0px 200px;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   justify-content: center;
   align-items: center;
   place-items: center;
@@ -40,7 +41,7 @@ body{
   overflow: hidden;
   position: relative;
   box-shadow: 0px 8px 16px 10px #00000033 ;
-  background: #f9f9f952;
+  background: #f9f9f967;
 }
 
 .form{
@@ -54,13 +55,43 @@ body{
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
+.form.login{
+  align-items: center;
+  justify-content: center;  
+  padding: 65px 150px;
+  /* width: 500px; */
+  transition-timing-function: ease-out;
+}
+
+header{
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #D2691E;
+  -webkit-text-stroke: 0.1pt #8659397a;
+  text-shadow: 3px 3px 3px #0a0a0a55;
+  font-family: 'Satisfy', cursive;
+}
+
+::placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
 h2{
   width: 100%;
   font-size: 30px;
   text-align: center;
 }
 
-label{
+label {
+  font-size: 14px;
+  color: #24262b5c;
+  display: block;
+}
+
+/* label{
   display: block;
   width: 260px;
   margin: 25px auto 0;
@@ -72,9 +103,9 @@ label span{
   font-weight: 600;
   color: #505f75;
   text-transform: uppercase;
-}
+} */
 
-.cont input{
+/* .cont input{
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -83,9 +114,30 @@ label span{
   border-bottom: 1px solid rgba(109, 93, 93, 0.4);
   text-align: center;
   font-family: 'Nunito', sans-serif; 
+} */
+
+.form .field{
+  position: relative;
+  height: 50px;
+  width: 120%;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding-right: 5rem;
 }
 
-.cont button{
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+}
+
+/* .cont button{
   display: block;
   margin: 0 auto;
   width: 260px;
@@ -94,6 +146,57 @@ label span{
   color: #fff;
   font-size: 15px;
   cursor: pointer;
+} */
+
+.field input{
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+  display: block;
+}
+
+.field input:focus{
+  border-bottom-width: 2px;
+  border-color: #D2691E;
+}
+
+.form-check {
+  margin-top: 5px;
+}
+
+.form-check-label {
+  text-decoration: none;
+  color: rgb(65, 65, 65); 
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-link span,
+.form-link a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #040404;
+}
+
+.form .forgot-pass{
+  color: black;
+  text-decoration: none;
+  border-style: none none double double ;
+  /* border-color: #f9f9f93c #f9f9f93c #01cb4e #01cb4e; */
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.form-content a:hover{
+  background-color:#DAA520;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  padding:8px;
 }
 
 .submit{
@@ -109,7 +212,31 @@ label span{
   background: -webkit-linear-gradient(left, #b224ef, #7579ff);
 }
 
-.forgot-pass{
+.field button{
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: center;
+  background: linear-gradient(#8f3c16b4,#f1d0a4d5); 
+  box-shadow: 0px 14px 80px rgba(46, 38, 38, 0.4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.field button:hover{
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  background-color: 	#800000;
+  border: 1px solid #b3623cb7;
+  font-size: 17px;
+}
+
+/* .forgot-pass{
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
@@ -120,6 +247,34 @@ label span{
 
 .forgot-pass:hover{
   color: red;
+} */
+
+.line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #F5DEB3;
+}
+
+.line::before{
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#F5DEB3;
+  color: tan;
+  padding: 0 15px;
+}
+
+#signups{
+  align-items: center;
+justify-content: center;  
+padding: 65px 150px;
+/* width: 500px; */
+transition-timing-function: ease-out;
+
 }
 
 .social-media{
@@ -135,12 +290,19 @@ label span{
 .social-media ul li{
   display: inline-block;
   cursor: pointer;
-  margin: 25px 15px;
+  margin: 25px 10px;
 }
 
 .social-media img{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.social-media img:hover {
+  width: 35px;
+  height: 35px;
+  filter:drop-shadow(-3px 1px 78px -11px rgb(0, 0, 0));
+  -webkit-filter:drop-shadow(-3px 1px 78px -11px rgb(0, 0, 0));
 }
 
 .sub-cont{
@@ -151,7 +313,7 @@ label span{
   width: 900px;
   height: 100%;
   padding-left: 260px;
-  background: #fff;
+  background: #fce1b9fd;
   -webkit-transition: -webkit-transform 1.2s ease-in-out;
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
@@ -161,6 +323,7 @@ label span{
   -webkit-transform:translate3d(-640px, 0, 0);
           transform:translate3d(-640px, 0, 0);
 }
+
 
 .img{
   overflow: hidden;
@@ -193,7 +356,7 @@ label span{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background:#351d1086;
 }
 
 .cont.s-signup .img:before{
@@ -205,7 +368,7 @@ label span{
   z-index: 2;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 60px;
   width: 100%;
   padding: 0 20px;
   text-align: center;
@@ -216,8 +379,9 @@ label span{
 }
 
 .img-text h2{
-  margin-bottom: 10px;
-  font-weight: normal;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .img-text p{
@@ -260,14 +424,14 @@ label span{
   overflow: hidden;
   z-index: 2;
   position: relative;
-  width: 100px;
-  height: 36px;
+  width: 200px;
+  height: 50px;
   margin: 0 auto;
   background: transparent;
-  color: #fff;
   text-transform: uppercase;
   font-size: 15px;
   cursor: pointer;
+  padding: 25px;
 }
 
 .img-btn:after{
@@ -279,10 +443,25 @@ label span{
   width: 100%;
   height: 100%;
   border: 2px solid #fff;
+  border-radius: 30px; 
+}
+
+.img-btn #up-btn , #in-btn {
+  background-color: beige;
+  color:#A52A2A;
   border-radius: 30px;
+  box-shadow: 0px 14px 80px rgba(46, 38, 38, 0.4);
+}
+
+.img-btn #up-btn:hover{
+  background-color:	#8B4513;
+  color: white;
 }
 
 .img-btn span{
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: 1px 0px 2px #0a0a0aa2;
   position: absolute;
   left: 0;
   top: 0;
@@ -322,4 +501,47 @@ label span{
 .cont.s-signup .sign-up{
   -webkit-transform:translate3d(0, 0, 0);
           transform:translate3d(0, 0, 0);
+}
+
+
+.invalid input {
+  border-color: #d93025;
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+  
+}
+
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+
+.invalid .error {
+  display: flex;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
+.create-password .error-icon {
+  margin-top: 4px;
 }
